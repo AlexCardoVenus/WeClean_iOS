@@ -1,0 +1,14 @@
+
+/* Class = "UITextField"; placeholder = "Password(optional)"; ObjectID = "IMh-aO-hql"; */
+"IMh-aO-hql.placeholder" = "密碼(如已設定)";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "KNh-aA-wi7"; */
+"KNh-aA-wi7.normalTitle" = "登入";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "daD-oB-msg"; */
+"daD-oB-msg.normalTitle" = "忘記密碼?";
+
+/* Class = "UITextField"; placeholder = "Enter Mobile Number"; ObjectID = "kSg-7O-1CC"; */
+"kSg-7O-1CC.placeholder" = "輸入手機號碼";
+
+"qm1-Rg-7Ns.normalTitle" = "詳細?";

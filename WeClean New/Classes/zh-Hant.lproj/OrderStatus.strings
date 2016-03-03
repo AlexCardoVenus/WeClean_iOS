@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "My Orders"; ObjectID = "3Js-dL-fXN"; */
+"3Js-dL-fXN.text" = "我的訂單	";
+
+/* Class = "UIButton"; normalTitle = "Place Order"; ObjectID = "ElT-Pa-dwn"; */
+"ElT-Pa-dwn.normalTitle" = "下單";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "kcg-aY-4zl"; */
+"kcg-aY-4zl.normalTitle" = "提交";
+
+/* Class = "UILabel"; text = "If you have any Comments or Complaints, Please share with us :"; ObjectID = "ytZ-DG-WaQ"; */
+"ytZ-DG-WaQ.text" = "如果 你 有 任何 如有任何意見或投訴,請告訴我們 要么 抱怨, 请 共享 同  :";

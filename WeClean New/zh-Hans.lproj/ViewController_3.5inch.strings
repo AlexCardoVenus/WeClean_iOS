@@ -1,0 +1,9 @@
+
+/* Class = "UITextField"; placeholder = "Password(optional)"; ObjectID = "IMh-aO-hql"; */
+"IMh-aO-hql.placeholder" = "Password(optional)";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "daD-oB-msg"; */
+"daD-oB-msg.normalTitle" = "Forgot Password?";
+
+/* Class = "UITextField"; placeholder = "Enter Mobile no or Last Name"; ObjectID = "kSg-7O-1CC"; */
+"kSg-7O-1CC.placeholder" = "Enter Mobile no or Last Name";

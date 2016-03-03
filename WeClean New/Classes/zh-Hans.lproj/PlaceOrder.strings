@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Delivery To"; ObjectID = "0LX-EM-l03"; */
+"0LX-EM-l03.text" = "Delivery To";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "9K5-M0-OuX"; */
+"9K5-M0-OuX.text" = "0";
+
+/* Class = "UILabel"; text = "HK$0.0"; ObjectID = "B2W-aN-9s5"; */
+"B2W-aN-9s5.text" = "HK$0.0";
+
+/* Class = "UIButton"; normalTitle = "Modify Order"; ObjectID = "IOP-kL-Jfz"; */
+"IOP-kL-Jfz.normalTitle" = "Modify Order";
+
+/* Class = "UILabel"; text = "Total Estimate"; ObjectID = "KZT-1o-5cD"; */
+"KZT-1o-5cD.text" = "Total Estimate";
+
+/* Class = "UILabel"; text = "EstimatedDue"; ObjectID = "Kzd-QW-eyb"; */
+"Kzd-QW-eyb.text" = "EstimatedDue";
+
+/* Class = "UIButton"; normalTitle = "Place Order"; ObjectID = "Lgg-JJ-WC4"; */
+"Lgg-JJ-WC4.normalTitle" = "Place Order";
+
+/* Class = "UILabel"; text = "Order Details"; ObjectID = "O0W-W0-JfI"; */
+"O0W-W0-JfI.text" = "Order Details";
+
+/* Class = "UILabel"; text = "Special Request:-"; ObjectID = "Xou-Ib-E0r"; */
+"Xou-Ib-E0r.text" = "Special Request:-";
+
+/* Class = "UILabel"; text = "Total Item"; ObjectID = "ZKR-fI-4Gk"; */
+"ZKR-fI-4Gk.text" = "Total Item";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "ao6-Ga-gwt"; */
+"ao6-Ga-gwt.text" = "Discount";
+
+/* Class = "UILabel"; text = "Delivery Time"; ObjectID = "byO-HJ-aKY"; */
+"byO-HJ-aKY.text" = "Delivery Time";
+
+/* Class = "UIButton"; normalTitle = "Delete Order"; ObjectID = "e87-J3-nxk"; */
+"e87-J3-nxk.normalTitle" = "Delete Order";
+
+/* Class = "UILabel"; text = "HK$20 will charge extra for under HK$200"; ObjectID = "fKG-ba-jKH"; */
+"fKG-ba-jKH.text" = "HK$20 will charge extra for under HK$200";
+
+/* Class = "UILabel"; text = "Pick up Time"; ObjectID = "uG7-ns-3k9"; */
+"uG7-ns-3k9.text" = "Pick up Time";
+
+/* Class = "UILabel"; text = "Pick up From"; ObjectID = "uSU-sV-VIH"; */
+"uSU-sV-VIH.text" = "Pick up From";
+
+/* Class = "UILabel"; text = "HK$0.0"; ObjectID = "yqe-uV-RLj"; */
+"yqe-uV-RLj.text" = "HK$0.0";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "zR3-vo-xrx"; */
+"zR3-vo-xrx.text" = "0%";

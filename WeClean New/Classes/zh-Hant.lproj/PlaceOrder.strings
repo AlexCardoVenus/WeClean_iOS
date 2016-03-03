@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Delivery To"; ObjectID = "0LX-EM-l03"; */
+"0LX-EM-l03.text" = "送貨方式";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "9K5-M0-OuX"; */
+"9K5-M0-OuX.text" = "0";
+
+/* Class = "UILabel"; text = "HK$0.0"; ObjectID = "B2W-aN-9s5"; */
+"B2W-aN-9s5.text" = "HK$0.0";
+
+/* Class = "UIButton"; normalTitle = "Modify Order"; ObjectID = "IOP-kL-Jfz"; */
+"IOP-kL-Jfz.normalTitle" = "修改訂單";
+
+/* Class = "UILabel"; text = "Total Estimate"; ObjectID = "KZT-1o-5cD"; */
+"KZT-1o-5cD.text" = "總費港幣";
+
+/* Class = "UILabel"; text = "EstimatedDue"; ObjectID = "Kzd-QW-eyb"; */
+"Kzd-QW-eyb.text" = "預計總費";
+
+/* Class = "UIButton"; normalTitle = "Place Order"; ObjectID = "Lgg-JJ-WC4"; */
+"Lgg-JJ-WC4.normalTitle" = "下單";
+
+/* Class = "UILabel"; text = "Order Details"; ObjectID = "O0W-W0-JfI"; */
+"O0W-W0-JfI.text" = "查看訂單詳情";
+
+/* Class = "UILabel"; text = "Special Request:-"; ObjectID = "Xou-Ib-E0r"; */
+"Xou-Ib-E0r.text" = "特別要求:-";
+
+/* Class = "UILabel"; text = "Total Item"; ObjectID = "ZKR-fI-4Gk"; */
+"ZKR-fI-4Gk.text" = "總件數";
+
+/* Class = "UILabel"; text = "Discount"; ObjectID = "ao6-Ga-gwt"; */
+"ao6-Ga-gwt.text" = "折扣";
+
+/* Class = "UILabel"; text = "Delivery Time"; ObjectID = "byO-HJ-aKY"; */
+"byO-HJ-aKY.text" = "送貨時段";
+
+/* Class = "UIButton"; normalTitle = "Delete Order"; ObjectID = "e87-J3-nxk"; */
+"e87-J3-nxk.normalTitle" = "取消訂單";
+
+/* Class = "UILabel"; text = "HK$20 will charge extra for under HK$200"; ObjectID = "fKG-ba-jKH"; */
+"fKG-ba-jKH.text" = "HK$20 将 收费 额外 为 HK$200";
+
+/* Class = "UILabel"; text = "Pick up Time"; ObjectID = "uG7-ns-3k9"; */
+"uG7-ns-3k9.text" = "我們將在以下的時段收貨 時段";
+
+/* Class = "UILabel"; text = "Pick up From"; ObjectID = "uSU-sV-VIH"; */
+"uSU-sV-VIH.text" = "我們將在以下的時段收貨 从";
+
+/* Class = "UILabel"; text = "HK$0.0"; ObjectID = "yqe-uV-RLj"; */
+"yqe-uV-RLj.text" = "HK$0.0";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "zR3-vo-xrx"; */
+"zR3-vo-xrx.text" = "0%";

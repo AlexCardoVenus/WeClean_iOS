@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "Expected Delivery Date & Time :"; ObjectID = "0Fh-SG-6MT"; */
+"0Fh-SG-6MT.text" = "Expected Delivery Date & Time :";
+
+/* Class = "UILabel"; text = "We will call you before we came by"; ObjectID = "1Lk-Ic-1HO"; */
+"1Lk-Ic-1HO.text" = "We will call you before we came by";
+
+/* Class = "UILabel"; text = "We will pick-up your order around"; ObjectID = "3pJ-e2-w6N"; */
+"3pJ-e2-w6N.text" = "We will pick-up your order around";
+
+/* Class = "UIButton"; normalTitle = "Pay Now"; ObjectID = "6Yb-q0-eUq"; */
+"6Yb-q0-eUq.normalTitle" = "Pay Now";
+
+/* Class = "UILabel"; text = "Payment Method"; ObjectID = "I0x-3Q-ePc"; */
+"I0x-3Q-ePc.text" = "Payment Method";
+
+/* Class = "UILabel"; text = "Total item"; ObjectID = "MYk-1g-vDi"; */
+"MYk-1g-vDi.text" = "Total item";
+
+/* Class = "UILabel"; text = "Not yet Assigned"; ObjectID = "MjN-Mz-twc"; */
+"MjN-Mz-twc.text" = "Not yet Assigned";
+
+/* Class = "UILabel"; text = "We have received your order"; ObjectID = "O6f-vM-fah"; */
+"O6f-vM-fah.text" = "We have received your order";
+
+/* Class = "UILabel"; text = "Delivery To"; ObjectID = "ORU-qr-jKt"; */
+"ORU-qr-jKt.text" = "Delivery To";
+
+/* Class = "UILabel"; text = "We will deliver oder within : "; ObjectID = "QFk-xf-E78"; */
+"QFk-xf-E78.text" = "We will deliver oder within : ";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Sqc-nx-TQz"; */
+"Sqc-nx-TQz.text" = "Label";
+
+/* Class = "UILabel"; text = "Total Due"; ObjectID = "WOQ-XU-v7A"; */
+"WOQ-XU-v7A.text" = "Total Due";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Z2m-fO-ZNr"; */
+"Z2m-fO-ZNr.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Pay Later"; ObjectID = "a1d-pk-5nt"; */
+"a1d-pk-5nt.normalTitle" = "Pay Later";
+
+/* Class = "UILabel"; text = "2 working days"; ObjectID = "eI1-IW-muO"; */
+"eI1-IW-muO.text" = "2 working days";
+
+/* Class = "UILabel"; text = "Delivery Time"; ObjectID = "hPY-fW-rce"; */
+"hPY-fW-rce.text" = "Delivery Time";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "ib2-Ep-GqA"; */
+"ib2-Ep-GqA.normalTitle" = "Confirm";

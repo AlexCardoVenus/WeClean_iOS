@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "Awa-zz-UKY"; */
+"Awa-zz-UKY.normalTitle" = "Verify";
+
+/* Class = "UITextField"; placeholder = "Reset Code"; ObjectID = "KDN-Ug-4DL"; */
+"KDN-Ug-4DL.placeholder" = "Reset Code";
+
+/* Class = "UITextField"; placeholder = "Enter Mobile no"; ObjectID = "bZf-v0-S11"; */
+"bZf-v0-S11.placeholder" = "Enter Mobile no";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "p97-at-MkB"; */
+"p97-at-MkB.placeholder" = "New Password";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "qQC-eX-Y2g"; */
+"qQC-eX-Y2g.placeholder" = "New Password";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "r6q-gW-ANz"; */
+"r6q-gW-ANz.normalTitle" = "Reset";

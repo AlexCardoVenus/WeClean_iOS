@@ -1,0 +1,29 @@
+/* 
+  Localised Strings.strings
+  WeClean New
+
+  Created by Jamhub-Mac on 5/26/15.
+  Copyright (c) 2015 com.Jamhub. All rights reserved.
+*/
+//"Login"="Login";
+
+"Enter Mobile no or Last Name"="Enter Mobile no or Last Name";
+
+"Password(optional)"="Password(optional)";
+
+//"Forgot Password?"= "Forgot Password?";
+
+"Place Order"="Place Order";
+
+"Submit"=" Submit";
+
+"My Orders"="My Orders";
+
+"If you have any Comments or Complaints, Please share with us :"="If you have any Comments or Complaints, Please share with us :";
+
+"Waiting"="Waiting";
+
+"Not Paid"="Not Paid";
+"Thanks"="Select an option";
+"View Order status"="View Order status";
+"Modify Order"="Modify Order";

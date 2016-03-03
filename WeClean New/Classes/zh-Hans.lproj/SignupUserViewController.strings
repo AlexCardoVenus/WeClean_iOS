@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Refer to a friend (both you and your friend get 50% off to the next order after he registered)"; ObjectID = "6ho-4K-I3S"; */
+"6ho-4K-I3S.text" = "Refer to a friend (both you and your friend get 50% off to the next order after he registered)";
+
+/* Class = "UILabel"; text = "____________________"; ObjectID = "7Yn-Qj-jp1"; */
+"7Yn-Qj-jp1.text" = "____________________";
+
+/* Class = "UITextField"; placeholder = "Last Name"; ObjectID = "7gv-rk-8sX"; */
+"7gv-rk-8sX.placeholder" = "Last Name";
+
+/* Class = "UIButton"; normalTitle = "Click here verify Code"; ObjectID = "AhL-sy-zlp"; */
+"AhL-sy-zlp.normalTitle" = "Click here verify Code";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "B9H-cv-QYS"; */
+"B9H-cv-QYS.normalTitle" = "OK";
+
+/* Class = "UITextField"; placeholder = "Email address (optional)"; ObjectID = "D5Q-zh-sic"; */
+"D5Q-zh-sic.placeholder" = "Email address (optional)";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "KBo-xa-EXY"; */
+"KBo-xa-EXY.placeholder" = "Confirm Password";
+
+/* Class = "UITextField"; placeholder = "Password (optional)"; ObjectID = "Owt-yi-CpL"; */
+"Owt-yi-CpL.placeholder" = "Password (optional)";
+
+/* Class = "UITextField"; placeholder = "refer email address"; ObjectID = "Sce-Ol-thz"; */
+"Sce-Ol-thz.placeholder" = "refer email address";
+
+/* Class = "UITextField"; placeholder = "Address/Street"; ObjectID = "Uzh-gD-n0C"; */
+"Uzh-gD-n0C.placeholder" = "Address/Street";
+
+/* Class = "UIButton"; normalTitle = "Click here"; ObjectID = "YAd-fM-fxf"; */
+"YAd-fM-fxf.normalTitle" = "Click here";
+
+/* Class = "UILabel"; text = "Email not verified"; ObjectID = "anl-lA-y63"; */
+"anl-lA-y63.text" = "Email not verified";
+
+/* Class = "UILabel"; text = "_________ "; ObjectID = "apk-rN-may"; */
+"apk-rN-may.text" = "_________ ";
+
+/* Class = "UILabel"; text = "Enter Verification Code"; ObjectID = "cEM-Lf-Og1"; */
+"cEM-Lf-Og1.text" = "Enter Verification Code";
+
+/* Class = "UITextField"; placeholder = "Referal (Enter invitation / Promo Code)"; ObjectID = "dCy-1J-z7h"; */
+"dCy-1J-z7h.placeholder" = "Referal (Enter invitation / Promo Code)";
+
+/* Class = "UITextField"; placeholder = "First Name"; ObjectID = "haP-61-J9k"; */
+"haP-61-J9k.placeholder" = "First Name";
+
+/* Class = "UITextField"; placeholder = "Mobile  No"; ObjectID = "hng-NN-BJN"; */
+"hng-NN-BJN.placeholder" = "Mobile  No";
+
+/* Class = "UILabel"; text = "to get shop info"; ObjectID = "m1P-y5-WVs"; */
+"m1P-y5-WVs.text" = "to get shop info";
+
+/* Class = "UITextField"; placeholder = "refer mobile no"; ObjectID = "zSN-vv-iwc"; */
+"zSN-vv-iwc.placeholder" = "refer mobile no";

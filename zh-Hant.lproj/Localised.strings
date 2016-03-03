@@ -1,0 +1,28 @@
+/* 
+  Localised.strings
+  WeClean New
+
+  Created by Jamhub-Mac on 7/31/15.
+  Copyright (c) 2015 com.Jamhub. All rights reserved.
+*/
+"Login"="登入";
+
+"Enter Mobile Number"="輸入手機號碼";
+
+"Password"="密碼(如已設定)";
+
+"Forgot Password?"= "忘記密碼?";
+
+"Place Order"="下單";
+
+"Submit"=" 提交";
+
+"My Orders"="我的訂單";
+
+"If you have any Comments or Complaints, Please share with us :"="如有任何意見或投訴,請告訴我們";
+
+"Waiting"="等待";
+
+"Not Paid"="未付";
+"Thanks" = "選項";
+"View Order status"="查看訂單狀態";

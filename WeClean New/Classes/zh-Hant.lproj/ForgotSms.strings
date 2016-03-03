@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "Verify"; ObjectID = "Awa-zz-UKY"; */
+"Awa-zz-UKY.normalTitle" = "取驗證碼";
+
+/* Class = "UITextField"; placeholder = "Reset Code"; ObjectID = "KDN-Ug-4DL"; */
+"KDN-Ug-4DL.placeholder" = "重設密碼";
+
+/* Class = "UITextField"; placeholder = "Enter Mobile no"; ObjectID = "bZf-v0-S11"; */
+"bZf-v0-S11.placeholder" = "輸入手機號碼";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "p97-at-MkB"; */
+"p97-at-MkB.placeholder" = "新密碼";
+
+/* Class = "UITextField"; placeholder = "New Password"; ObjectID = "qQC-eX-Y2g"; */
+"qQC-eX-Y2g.placeholder" = "新密碼";
+
+/* Class = "UIButton"; normalTitle = "Reset"; ObjectID = "r6q-gW-ANz"; */
+"r6q-gW-ANz.normalTitle" = "重設";

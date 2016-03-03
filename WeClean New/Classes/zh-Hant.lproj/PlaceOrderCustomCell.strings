@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "-"; ObjectID = "6CD-8Y-LEW"; */
+"6CD-8Y-LEW.normalTitle" = "-";
+
+/* Class = "UIButton"; normalTitle = "Add"; ObjectID = "J6h-WE-rmN"; */
+"J6h-WE-rmN.normalTitle" = "加";
+
+/* Class = "UILabel"; text = "Item Name"; ObjectID = "KU8-65-RHI"; */
+"KU8-65-RHI.text" = "Item Name";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ih4-Ua-y2Y"; */
+"ih4-Ua-y2Y.text" = "0";
+
+/* Class = "UILabel"; text = "select color"; ObjectID = "wpx-Y9-ezc"; */
+"wpx-Y9-ezc.text" = "select color";

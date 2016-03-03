@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "Pick up From"; ObjectID = "04X-tS-xTZ"; */
+"04X-tS-xTZ.text" = "Pick up From";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "3ci-yS-YW6"; */
+"3ci-yS-YW6.title" = "Item";
+
+/* Class = "UILabel"; text = "If you have any Comments or Complaints, Please share with us :"; ObjectID = "6Rr-3G-vz1"; */
+"6Rr-3G-vz1.text" = "If you have any Comments or Complaints, Please share with us :";
+
+/* Class = "UIButton"; normalTitle = "Place Order"; ObjectID = "8XQ-sM-n4Z"; */
+"8XQ-sM-n4Z.normalTitle" = "Place Order";
+
+/* Class = "UITextField"; text = "Forgot Password ?"; ObjectID = "9eo-n7-InU"; */
+"9eo-n7-InU.text" = "Forgot Password ?";
+
+/* Class = "UILabel"; text = "  Order List"; ObjectID = "AOp-IX-ZIl"; */
+"AOp-IX-ZIl.text" = "  Order List";
+
+/* Class = "UILabel"; text = "Delivery Time"; ObjectID = "CVy-7p-WKd"; */
+"CVy-7p-WKd.text" = "Delivery Time";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Fby-K0-aZH"; */
+"Fby-K0-aZH.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Pick up Time"; ObjectID = "Hve-aZ-RuS"; */
+"Hve-aZ-RuS.text" = "Pick up Time";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "J9D-Q7-71d"; */
+"J9D-Q7-71d.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Password(optional)"; ObjectID = "LV6-Rs-fhY"; */
+"LV6-Rs-fhY.placeholder" = "Password(optional)";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Y38-NF-xX2"; */
+"Y38-NF-xX2.title" = "Item";
+
+/* Class = "UILabel"; text = "Account Settings"; ObjectID = "bAO-Sv-n4j"; */
+"bAO-Sv-n4j.text" = "Account Settings";
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "gCN-OT-mmf"; */
+"gCN-OT-mmf.text" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "hpo-oA-nYv"; */
+"hpo-oA-nYv.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "Place an Order"; ObjectID = "jv7-mR-z1g"; */
+"jv7-mR-z1g.text" = "Place an Order";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "ltB-4e-Ar3"; */
+"ltB-4e-Ar3.title" = "Item";
+
+/* Class = "UITextField"; placeholder = "Enter Mobile no or Last Name"; ObjectID = "oCb-8O-Prn"; */
+"oCb-8O-Prn.placeholder" = "Enter Mobile no or Last Name";
+
+/* Class = "UILabel"; text = "Delivery To"; ObjectID = "zIt-ju-GQy"; */
+"zIt-ju-GQy.text" = "Delivery To";
