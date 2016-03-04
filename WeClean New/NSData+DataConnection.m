@@ -17,7 +17,7 @@
     [request setCachePolicy:NSURLRequestReturnCacheDataElseLoad];
    
     [request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
-    [request setHTTPBody:[[NSString stringWithFormat:param] dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:[param dataUsingEncoding:NSUTF8StringEncoding]];
     [request setHTTPMethod:@"POST"];
 
     

@@ -215,7 +215,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-C6-6Ag">
-                    <rect key="frame" x="287" y="672" width="30" height="30"/>
+                    <rect key="frame" x="23" y="70" width="30" height="30"/>
                     <state key="normal" title="Laundry" image="icon laundry.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
@@ -233,7 +233,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hV-eZ-F0U">
-                    <rect key="frame" x="333" y="672" width="30" height="30"/>
+                    <rect key="frame" x="66" y="70" width="30" height="30"/>
                     <state key="normal" title="Others" image="icon others.png">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>

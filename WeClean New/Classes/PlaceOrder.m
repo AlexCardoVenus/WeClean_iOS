@@ -31,7 +31,7 @@
 @synthesize openingSection;
 NSArray *_pickupfrom;
 NSArray *_pickuptime;
-  UIPickerView *pickerView ;
+UIPickerView *pickerView ;
 UIToolbar* toolbar;
 UIActivityIndicatorView *indicator;
 NSInteger filterBtn;
@@ -256,13 +256,7 @@ NSInteger filterBtn;
         openingSection=0;
         self.customerID=@"";
         UINavigationController *navigationController = self.menuContainerViewController.centerViewController;
-        OrderStatus *order;
-/*        if ([[UIScreen mainScreen]bounds].size.height == 568||[[UIScreen mainScreen]bounds].size.height == 480)
-        {
-            order = [[OrderStatus alloc] initWithNibName:@"OrderStatus_4inch" bundle:nil];
-        }
-*/
-            order = [[OrderStatus alloc] initWithNibName:@"OrderStatus" bundle:nil];
+        OrderStatus *order = [[OrderStatus alloc] initWithNibName:@"OrderStatus" bundle:nil];
         NSArray *controllers= [NSArray arrayWithObject:order];
         navigationController.viewControllers = controllers;
         [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
@@ -495,7 +489,7 @@ NSInteger filterBtn;
 -(IBAction)btnSelectColourClicked:(id)sender
 {
     UIButton *btn = (UIButton*)sender;
-    [self setUpPopUpView:btn.tag];
+    [self setUpPopUpView:(int)btn.tag];
     
 }
 -(IBAction)btnAddClicked:(id)sender
@@ -782,18 +776,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         [self showPicker:textFieldDeliveryTime];
     }
 }
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
- /*   if (textField==textFieldSpecialRequest) {
-        [textField resignFirstResponder];
-    }*/
-    return YES;
-}
-- (BOOL)textFieldShouldBeginEditing:(UITextField *)aTextField
-{
-//    [self showPicker:aTextField];
-    return YES;
-}
+
 -(void)doneClicked:(id)sender
 {
     if ([selectedText length]==0) {
@@ -842,7 +825,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         }
         else{
             [self postOrder:ORDER_INSERT];
-            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Delivery charge HK$20 will apply" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Delivery charge HK$20 will apply" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [alert show];
         } }
 
@@ -861,38 +844,18 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 -(IBAction)deleteOrder:(id)sender
 {
     [self showprogressbar];
-    NSError *error;
-    WebService *webServ=[[WebService alloc]init];
-    NSData *data = [webServ postDataToServer:ORDER_DELETE param:[NSString stringWithFormat:@"&CustomerID=%@&OrderID=%@&",customerid,orderNoStr]];
-    NSDictionary *dataDict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
-    NSArray *orderDeatils=[dataDict objectForKey:@"orderID"];
-    NSDictionary *orderDeatilsDict=[orderDeatils objectAtIndex:0];
-     if ( [[orderDeatilsDict objectForKey:@"result"]isEqualToString:@"true"]) {
-         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Deleted Order Successfully" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-         [alert show];
-         UINavigationController *navigationController = self.menuContainerViewController.centerViewController;
-         OrderStatus *order;
-         order = [[OrderStatus alloc] initWithNibName:@"OrderStatus" bundle:nil];
-         NSArray *controllers= [NSArray arrayWithObject:order];
-         navigationController.viewControllers = controllers;
-         [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
-          [indicator stopAnimating];
-     }
-    else
-    {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Couldn't delete order" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
-    }
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Are you sure?" delegate:self cancelButtonTitle:@"Yes" otherButtonTitles:@"No", nil];
+    [alert show];
+
 }
 -(void)postOrder:(NSString*)orderStr
 {
     //HTTPPOST login
-    NSMutableString *postparm= [NSMutableString stringWithFormat:@"&deliveryto=%@&deliverytime=%@&Pickfrom=%@&Picktime=%@&CustomerID=%@&TotalDue=%@&actualDue=%@&SpecialRequest=%@&promoCode=%@&OrderID=%@&deliveryfee=%@&",textFieldDeliveryTo.text,textFieldDeliveryTime.text,textFieldPickupFrom.text,textFieldPickupTime.text,customerid,[estimatedDue.text stringByReplacingOccurrencesOfString:@"HK$" withString:@""],[totalEstimate.text stringByReplacingOccurrencesOfString:@"HK$" withString:@""],textFieldSpecialRequest.text,self.promoCodeVal,orderNoStr,@""];
+/*    NSMutableString *postparm= [NSMutableString stringWithFormat:@"&deliveryto=%@&deliverytime=%@&Pickfrom=%@&Picktime=%@&CustomerID=%@&TotalDue=%@&actualDue=%@&SpecialRequest=%@&promoCode=%@&OrderID=%@&deliveryfee=%@&",textFieldDeliveryTo.text,textFieldDeliveryTime.text,textFieldPickupFrom.text,textFieldPickupTime.text,customerid,[estimatedDue.text stringByReplacingOccurrencesOfString:@"HK$" withString:@""],[totalEstimate.text stringByReplacingOccurrencesOfString:@"HK$" withString:@""],textFieldSpecialRequest.text,self.promoCodeVal,orderNoStr,@""];
     NSMutableArray *itemIDArrayColl=[[NSMutableArray alloc]init];
       for (int i=0; i<[itemsArray count]; i++) {
           NSDictionary *dict=[itemsArray objectAtIndex:i];
           [itemIDArrayColl addObject:[dict objectForKey:@"ItemID"]];
-          NSLog(@"%@", itemIDArrayColl);
       }
     for (int i=0; i<[itemIDArrayColl count]; i++) {
          NSString* itemID=[itemIDArrayColl objectAtIndex:i];
@@ -904,15 +867,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             colorVal=[saveItemsColoursArray objectAtIndex:j];
         }
          }
-        NSLog(@"%@", colorVal);
-        NSLog(@"%ld", count);
-        NSLog(@"%@", saveItemsIDArray);
         if (count>0) {
             NSString* append = [NSString stringWithFormat:@"item[]=%@&itemid[]=%@&Itemcolor[]=%@&",[NSString stringWithFormat:@"%d",count],[NSString stringWithFormat:@"%@",itemID],colorVal];
              [postparm appendString:append];
         }
-
-       
     }
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:orderStr]];
@@ -927,15 +885,18 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         NSArray *orderDeatils=[dataDict objectForKey:@"orderID"];
         NSDictionary *orderDeatilsDict=[orderDeatils objectAtIndex:0];
         
-        if ( [[orderDeatilsDict objectForKey:@"result"]isEqualToString:@"true"]) {
+        if ( [[orderDeatilsDict objectForKey:@"result"]isEqualToString:@"true"]) {*/
             openingSection=1;
   
             OrderSuccess *success=[self getSuccessView];
-            success.orderNoStr=[orderDeatilsDict objectForKey:@"id"];
+            success.orderStr = orderStr;
   
             NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
             [DateFormatter setDateFormat:@"yyyy-MM-dd"];
-            success.pickUpStr=[NSString stringWithFormat:@"%@ %@",[DateFormatter stringFromDate:[NSDate date]],textFieldPickupTime.text] ;
+            NSDate* now = [NSDate date];
+            NSDate* expectedDate = [now dateByAddingTimeInterval:2*24*60*60];
+            success.expectedDateStr = [DateFormatter stringFromDate:expectedDate];
+            success.pickUpStr=[NSString stringWithFormat:@"%@ %@",[DateFormatter stringFromDate:now],textFieldPickupTime.text] ;
             success.totalItemStr=[NSString stringWithFormat:@"%lu",(unsigned long)[saveItemsIDArray count]];
             
             success.totalDueStr=estimatedDue.text;
@@ -957,7 +918,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             success.femaleAmountStr = self.femaleAmountStr;
 
             [self.navigationController pushViewController:success animated:YES];
-        }
+ /*       }
        [indicator stopAnimating];
    }
         else
@@ -966,7 +927,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             [alert show];
         }
     }];
-         ;
+         ;*/
     }
 
 -(FirstViewController *)getViewController
@@ -991,9 +952,30 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
         navigationController.viewControllers = controllers;
         [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
     }
-    else if ([title isEqualToString:@"Cancel"])
+    else if ([title isEqualToString:@"Yes"])
     {
-        
+        NSError *error;
+        WebService *webServ=[[WebService alloc]init];
+        NSData *data = [webServ postDataToServer:ORDER_DELETE param:[NSString stringWithFormat:@"&CustomerID=%@&OrderID=%@&",customerid,orderNoStr]];
+        NSDictionary *dataDict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+        NSArray *orderDeatils=[dataDict objectForKey:@"orderID"];
+        NSDictionary *orderDeatilsDict=[orderDeatils objectAtIndex:0];
+        if ( [[orderDeatilsDict objectForKey:@"result"]isEqualToString:@"true"]) {
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Deleted Order Successfully" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+            UINavigationController *navigationController = self.menuContainerViewController.centerViewController;
+            OrderStatus *order;
+            order = [[OrderStatus alloc] initWithNibName:@"OrderStatus" bundle:nil];
+            NSArray *controllers= [NSArray arrayWithObject:order];
+            navigationController.viewControllers = controllers;
+            [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
+            [indicator stopAnimating];
+        }
+        else
+        {
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"" message:@"Couldn't delete order" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
+        }
     }
 
 }
@@ -1024,16 +1006,6 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 -(OrderSuccess*)getSuccessView
 {
     OrderSuccess *success;
-    /*
-    if ([[UIScreen mainScreen]bounds].size.height == 568)
-    {
-        success= [[OrderSuccess alloc] initWithNibName:@"OrderSuccess" bundle:nil];
-
-    }
-    else if ([[UIScreen mainScreen]bounds].size.height == 480)
-    {
-         success= [[OrderSuccess alloc] initWithNibName:@"OrderSuccess_3.5inch" bundle:nil];
-    }*/
     success= [[OrderSuccess alloc] initWithNibName:@"OrderSuccess_6" bundle:nil];
     return success;
 }

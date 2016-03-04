@@ -590,12 +590,12 @@ UIActivityIndicatorView *indicator;
 
     NSLog(@"%@", mobileNumber.text);
     
+    NSString* tempMobileNo = mobileNumber.text;
     if (![mobileNumber.text hasPrefix:@"852"])
     {
         NSString* temp = [NSString stringWithFormat:@"852%@", mobileNumber.text];
         [mobileNumber setText:temp];
     }
-//    [mobieNumber ]
     NSString *verifyurl=[NSString stringWithFormat:MOBILE_Code@"&msg=%@&phone=%@&pwd=%@&accountno=%@",message_text,mobileNumber.text,pwd,accno];
     
     NSString* encodedUrl = [verifyurl stringByAddingPercentEscapesUsingEncoding:
@@ -709,7 +709,7 @@ UIActivityIndicatorView *indicator;
         if([[SqliteDataBase getSharedInstance].language isEqualToString:@"en"]){
             if(y == TRUE)
             {
-                NSInteger screenSize = [[UIScreen mainScreen]bounds].size.height;
+//                NSInteger screenSize = [[UIScreen mainScreen]bounds].size.height;
                 Verify_View.frame=CGRectMake(32, 319, 256, 132);
             }
             
@@ -866,7 +866,7 @@ UIActivityIndicatorView *indicator;
         NSDictionary *dict=[itemsArray objectAtIndex:0];
         firstName.text=[dict objectForKey:@"FirstName"];
         lastName.text=[dict objectForKey:@"LastName"];
-        mobileNumber.text=[dict objectForKey:@"Mobile#1"];
+        mobileNumber.text = [[dict objectForKey:@"Mobile#1"] stringByReplacingOccurrencesOfString:@"852" withString:@""];
         referMobileNo.text=[dict objectForKey:@"Mobile#2"];
         address.text=[dict objectForKey:@"StreetAddress"];
         selectedDistID=[dict objectForKey:@"District"];

@@ -20,17 +20,13 @@
     
     NSString *selectedText;
     
-    
+    IBOutlet UILabel *labelExpectedDate;
     IBOutlet UITextField *textFieldDeliveryTo;
     IBOutlet UITextField *textFieldDeliveryTime;
-    IBOutlet UIView *view1;
-    IBOutlet UIView *view2;
-    IBOutlet UIView *view3;
-    IBOutlet UIButton *btnConfirm;
-    IBOutlet UIButton *btnPayLater;
-    IBOutlet UIButton *btnPayNow;
 }
 
+@property(nonatomic,retain)NSString *expectedDateStr;
+@property(nonatomic,retain)NSString *orderStr;
 @property(nonatomic,retain)NSString *orderNoStr;
 @property(nonatomic,retain)NSString *pickUpStr;
 @property(nonatomic,retain)NSString *totalItemStr;
@@ -52,9 +48,5 @@
 @property(nonatomic,retain)NSString *femaleAmountStr;
 
 -(IBAction)btnConfirm:(id)sender;
--(IBAction)btnPayLater:(id)sender;
--(IBAction)btnPayNow:(id)sender;
-
-
 
 @end

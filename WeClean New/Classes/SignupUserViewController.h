@@ -68,7 +68,8 @@
     
  
 }
-@property(nonatomic,assign)Boolean modifyOption;
+@property(nonatomic,assign) Boolean modifyOption;
+@property(nonatomic,retain) NSString* mobileNoStr;
 
 -(IBAction)shopDetails:(id)sender;
 -(IBAction)clickedBtnVerifyCode:(id)sender;

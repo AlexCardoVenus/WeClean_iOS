@@ -20,10 +20,7 @@
 		1E9453841B145AF6006C7612 /* OrderStatus.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453861B145AF6006C7612 /* OrderStatus.xib */; };
 		1E9453891B145B0A006C7612 /* OrderStatus_4inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E94538B1B145B0A006C7612 /* OrderStatus_4inch.xib */; };
 		1E94538E1B145B20006C7612 /* OrderStatusTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453901B145B20006C7612 /* OrderStatusTable.xib */; };
-		1E9453991B148C53006C7612 /* PlaceOrder.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E94539B1B148C53006C7612 /* PlaceOrder.xib */; };
 		1E94539E1B148C66006C7612 /* PlaceOrder_6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453A01B148C66006C7612 /* PlaceOrder_6.xib */; };
-		1E9453A31B1492FB006C7612 /* OrderSuccess_3.5inch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453A51B1492FB006C7612 /* OrderSuccess_3.5inch.xib */; };
-		1E9453A81B149309006C7612 /* OrderSuccess.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453AA1B149309006C7612 /* OrderSuccess.xib */; };
 		1E9453AD1B149316006C7612 /* OrderSuccess_6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453AF1B149316006C7612 /* OrderSuccess_6.xib */; };
 		1E9453B21B149A69006C7612 /* PlaceOrderCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453B41B149A69006C7612 /* PlaceOrderCustomCell.xib */; };
 		1E9453BC1B14AA21006C7612 /* ShopDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9453BE1B14AA21006C7612 /* ShopDetails.xib */; };
@@ -162,10 +159,7 @@
 		1E59E0881B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderStatus.strings"; sourceTree = "<group>"; };
 		1E59E0891B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderStatus_4inch.strings"; sourceTree = "<group>"; };
 		1E59E08A1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderStatusTable.strings"; sourceTree = "<group>"; };
-		1E59E08B1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PlaceOrder.strings"; sourceTree = "<group>"; };
 		1E59E08C1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PlaceOrder_6.strings"; sourceTree = "<group>"; };
-		1E59E08D1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderSuccess_3.5inch.strings"; sourceTree = "<group>"; };
-		1E59E08E1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderSuccess.strings"; sourceTree = "<group>"; };
 		1E59E08F1B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/OrderSuccess_6.strings"; sourceTree = "<group>"; };
 		1E59E0901B6C8B9F00F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/PlaceOrderCustomCell.strings"; sourceTree = "<group>"; };
 		1E59E0921B6C8BA000F3EC33 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/ShopDetails.strings"; sourceTree = "<group>"; };
@@ -187,10 +181,7 @@
 		1E9453851B145AF6006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderStatus.xib; sourceTree = "<group>"; };
 		1E94538A1B145B0A006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderStatus_4inch.xib; sourceTree = "<group>"; };
 		1E94538F1B145B20006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderStatusTable.xib; sourceTree = "<group>"; };
-		1E94539A1B148C53006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PlaceOrder.xib; sourceTree = "<group>"; };
 		1E94539F1B148C66006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PlaceOrder_6.xib; sourceTree = "<group>"; };
-		1E9453A41B1492FB006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderSuccess_3.5inch.xib; sourceTree = "<group>"; };
-		1E9453A91B149309006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderSuccess.xib; sourceTree = "<group>"; };
 		1E9453AE1B149316006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OrderSuccess_6.xib; sourceTree = "<group>"; };
 		1E9453B31B149A69006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PlaceOrderCustomCell.xib; sourceTree = "<group>"; };
 		1E9453BD1B14AA21006C7612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShopDetails.xib; sourceTree = "<group>"; };
@@ -630,12 +621,9 @@
 				7643FE0C1C3471C10008C807 /* HelpViewController.xib */,
 				84CCCCC61AB5BE9B00B12422 /* PlaceOrder.h */,
 				84CCCCC71AB5BE9B00B12422 /* PlaceOrder.m */,
-				1E94539B1B148C53006C7612 /* PlaceOrder.xib */,
 				1E9453A01B148C66006C7612 /* PlaceOrder_6.xib */,
 				762662CF1C3A0AEB0085229E /* OrderSuccess.h */,
 				762662D01C3A0AEB0085229E /* OrderSuccess.m */,
-				1E9453A51B1492FB006C7612 /* OrderSuccess_3.5inch.xib */,
-				1E9453AA1B149309006C7612 /* OrderSuccess.xib */,
 				1E9453AF1B149316006C7612 /* OrderSuccess_6.xib */,
 				84CF56671AB9792B00C383E0 /* PlaceOrderCustomCell.h */,
 				84CF56681AB9792B00C383E0 /* PlaceOrderCustomCell.m */,
@@ -798,7 +786,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9453991B148C53006C7612 /* PlaceOrder.xib in Resources */,
 				762E8E9B1C4D746800415E38 /* vest3.png in Resources */,
 				769D03AB1C771A9C00ACAB79 /* female.png in Resources */,
 				1E9453CB1B14AB19006C7612 /* ForgotSms_6.xib in Resources */,
@@ -807,7 +794,6 @@
 				762662D61C3A0D8C0085229E /* OrderFinish.xib in Resources */,
 				84FCD7DC1ADA886F00A30B0B /* ZZMainViewController.xib in Resources */,
 				762E8E991C4D746800415E38 /* trousers.png in Resources */,
-				1E9453A31B1492FB006C7612 /* OrderSuccess_3.5inch.xib in Resources */,
 				762E8E9C1C4D746800415E38 /* womensuits2.png in Resources */,
 				1E2D86701B56309600F93916 /* backarow.png in Resources */,
 				1E9453BC1B14AA21006C7612 /* ShopDetails.xib in Resources */,
@@ -818,7 +804,6 @@
 				8420844E1AE80E17000EFA37 /* logout.png in Resources */,
 				1E9453C61B14AB0F006C7612 /* ForgotSms.xib in Resources */,
 				84FCD7E91ADA8A4800A30B0B /* button_secondary_selected@2x.png in Resources */,
-				1E9453A81B149309006C7612 /* OrderSuccess.xib in Resources */,
 				84FCD7E71ADA8A4800A30B0B /* button_secondary@2x.png in Resources */,
 				762E8EA41C4D795500415E38 /* icon add.png in Resources */,
 				84EF3AAF1AE69624007476A8 /* backBtn.png in Resources */,
@@ -1011,15 +996,6 @@
 			name = OrderStatusTable.xib;
 			sourceTree = "<group>";
 		};
-		1E94539B1B148C53006C7612 /* PlaceOrder.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E94539A1B148C53006C7612 /* Base */,
-				1E59E08B1B6C8B9F00F3EC33 /* zh-Hant */,
-			);
-			name = PlaceOrder.xib;
-			sourceTree = "<group>";
-		};
 		1E9453A01B148C66006C7612 /* PlaceOrder_6.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1027,24 +1003,6 @@
 				1E59E08C1B6C8B9F00F3EC33 /* zh-Hant */,
 			);
 			name = PlaceOrder_6.xib;
-			sourceTree = "<group>";
-		};
-		1E9453A51B1492FB006C7612 /* OrderSuccess_3.5inch.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E9453A41B1492FB006C7612 /* Base */,
-				1E59E08D1B6C8B9F00F3EC33 /* zh-Hant */,
-			);
-			name = OrderSuccess_3.5inch.xib;
-			sourceTree = "<group>";
-		};
-		1E9453AA1B149309006C7612 /* OrderSuccess.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E9453A91B149309006C7612 /* Base */,
-				1E59E08E1B6C8B9F00F3EC33 /* zh-Hant */,
-			);
-			name = OrderSuccess.xib;
 			sourceTree = "<group>";
 		};
 		1E9453AF1B149316006C7612 /* OrderSuccess_6.xib */ = {

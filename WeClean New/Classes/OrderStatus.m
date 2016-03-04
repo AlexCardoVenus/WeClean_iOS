@@ -303,7 +303,7 @@ typedef NS_ENUM(NSInteger, CellType) {
     contentView.frame = CGRectMake(0, 0, viewWidth - 20, 200);
     
     UIImageView* comingImage = [[UIImageView alloc] init];
-    [comingImage setImage:[UIImage imageNamed:@"finished.png"]];
+    [comingImage setImage:[UIImage imageNamed:@"checking.png"]];
     comingImage.frame= CGRectMake(20 , 40, 23, 23);
     UILabel* comingLabel = [[UILabel alloc] init];
     comingLabel.backgroundColor = [UIColor clearColor];
@@ -313,7 +313,7 @@ typedef NS_ENUM(NSInteger, CellType) {
     comingLabel.text = @"Coming";
     
     UIImageView* pickedImage = [[UIImageView alloc] init];
-    [pickedImage setImage:[UIImage imageNamed:@"finished.png"]];
+    [pickedImage setImage:[UIImage imageNamed:@"end.png"]];
     pickedImage.frame= CGRectMake(80 , 40, 23, 23);
     UILabel* pickedLabel = [[UILabel alloc] init];
     pickedLabel.backgroundColor = [UIColor clearColor];
@@ -323,7 +323,7 @@ typedef NS_ENUM(NSInteger, CellType) {
     pickedLabel.text = @"PickedUp";
     
     UIImageView* workingImage = [[UIImageView alloc] init];
-    [workingImage setImage:[UIImage imageNamed:@"checking.png"]];
+    [workingImage setImage:[UIImage imageNamed:@"end.png"]];
     workingImage.frame= CGRectMake(140 , 40, 23, 23);
     UILabel* workingLabel = [[UILabel alloc] init];
     workingLabel.backgroundColor = [UIColor clearColor];
