@@ -86,20 +86,14 @@ UIActivityIndicatorView *indicator;
                 pwsd=newPassword1.text;
             }
              [self showprogressbar];
-   // NSError *error;
     NSString *postparm= [NSString stringWithFormat:@"&mobileno=%@&password=%@&FLAG=%@&",mobileNo.text,pwsd,@"change"];
-//    WebService *webServ=[[WebService alloc]init];
-//    NSData *data = [webServ postDataToServer:UPDATE_PSWD param:postparm];
             NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:UPDATE_PSWD]];
             [request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
             [request setHTTPBody:[[NSString stringWithFormat:postparm] dataUsingEncoding:NSUTF8StringEncoding]];
             [request setHTTPMethod:@"POST"];
             
             [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-            
-            
-            
-            
+          
     if (data!=nil){
                 NSDictionary *dataDict=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
                 NSArray* itemsArray=[dataDict objectForKey:@"forgetpassword"];
@@ -109,14 +103,9 @@ UIActivityIndicatorView *indicator;
                     [indicator stopAnimating];
                 }
             }
-    else{
-        
-        
-    }
-        
+       
         }];
-            
-        }}}
+    }}}
 
 - (void) showAlert : (NSString *) msg{
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
@@ -126,8 +115,6 @@ UIActivityIndicatorView *indicator;
     [alert show];
 }
 - (IBAction)verify:(id)sender {
-     //[self showprogressbar];
-    
     if ([self validateMobileNumberField]==TRUE) {
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

@@ -29,8 +29,6 @@
     
     IBOutlet UITextField *textFieldPickupFrom;
     IBOutlet UITextField *textFieldPickupTime;
-    IBOutlet UITextField *textFieldDeliveryTo;
-    IBOutlet UITextField *textFieldDeliveryTime;
     
     UITextField *selectedTextField;
     

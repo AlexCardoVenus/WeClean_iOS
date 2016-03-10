@@ -47,12 +47,6 @@ NSInteger filterBtn;
     filterBtn = 0;
     uitableViewBorder.layer.borderColor = [UIColor grayColor].CGColor;
     uitableViewBorder.layer.borderWidth = 1.0f;
-    textFieldDeliveryTime.layer.borderColor = [UIColor grayColor].CGColor;
-    textFieldDeliveryTime.layer.borderWidth = 1.0f;
-    textFieldDeliveryTime.layer.cornerRadius = 3.0f;
-    textFieldDeliveryTo.layer.borderColor = [UIColor grayColor].CGColor;
-    textFieldDeliveryTo.layer.borderWidth = 1.0f;
-    textFieldDeliveryTo.layer.cornerRadius = 3.0f;
     textFieldPickupFrom.layer.borderColor = [UIColor grayColor].CGColor;
     textFieldPickupFrom.layer.borderWidth = 1.0f;
     textFieldPickupFrom.layer.cornerRadius = 3.0f;
@@ -96,9 +90,7 @@ NSInteger filterBtn;
     _pickuptime = @[@"anytime",@"9-10pm",@"10-11pm",@"11pm-12pm",@"12pm-6am",@"6-7am",@"7-8am"];
     
     textFieldPickupFrom.text=@"In Person";
-    textFieldDeliveryTo.text=@"In Person";
     textFieldPickupTime.text=@"anytime";
-    textFieldDeliveryTime.text=@"anytime";
         colourNameArray=@[@"white",@"gray",@"black",@"pink",@"red",@"orange",@"yellow",@"light green",@"green",@"light blue",@"blue",@"purple"];
     
        }
@@ -109,9 +101,7 @@ NSInteger filterBtn;
         _pickuptime = @[@"任何時段",@"9-10pm",@"10-11pm",@"11pm-12pm",@"12pm-6am",@"6-7am",@"7-8am"];
         
         textFieldPickupFrom.text=@"送到我家";
-        textFieldDeliveryTo.text=@"送到我家 ";
         textFieldPickupTime.text=@"任何時段";
-        textFieldDeliveryTime.text=@"任何時段";
         colourNameArray=@[@"白",@"灰",@"皂",@"粉红",@"红色",@"橙",@"黄",@"蔥綠",@"绿",@"淺藍",@"藍色",@"紫"];
        
     }
@@ -129,8 +119,6 @@ NSInteger filterBtn;
         customerid=self.customerID;
         estimatedDue.text= self.totalDueStr;
         totalEstimate.text= self.totalDueStr;
-        textFieldDeliveryTo.text=self.deliveryto;
-        textFieldDeliveryTime.text=self.deliverytime;
         textFieldPickupFrom.text=self.Pickfrom;
         textFieldPickupTime.text=self.Picktime;
         textFieldSpecialRequest.text=self.specialRequest;
@@ -265,6 +253,14 @@ NSInteger filterBtn;
     {
         openingSection=1;
         OrderSuccess *success=[self getSuccessView];
+        NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        NSDate* now = [dateFormatter dateFromString:pickUpStr];
+        NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
+        [DateFormatter setDateFormat:@"yyyy-MM-dd"];
+        NSDate* expectedDate = [now dateByAddingTimeInterval:2*24*60*60];
+        success.expectedDateStr = [DateFormatter stringFromDate:expectedDate];
+        success.orderStr = ORDER_MODIFY;
         success.orderNoStr=self.orderNoStr;
         success.pickUpStr=self.pickUpStr;
         success.totalDueStr=self.totalDueStr;
@@ -718,11 +714,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     
-    if (selectedTextField==textFieldPickupFrom||selectedTextField==textFieldDeliveryTo) {
+    if (selectedTextField==textFieldPickupFrom) {
          selectedText= [_pickupfrom objectAtIndex:row];
         
     }
-    else if (selectedTextField==textFieldPickupTime||selectedTextField==textFieldDeliveryTime)
+    else if (selectedTextField==textFieldPickupTime)
     {
          selectedText= [_pickuptime objectAtIndex:row];
         
@@ -733,10 +729,10 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component;
 {
-    if (selectedTextField==textFieldPickupFrom||selectedTextField==textFieldDeliveryTo) {
+    if (selectedTextField==textFieldPickupFrom) {
          return [_pickupfrom count];
     }
-    else if (selectedTextField==textFieldPickupTime||selectedTextField==textFieldDeliveryTime)
+    else if (selectedTextField==textFieldPickupTime)
     {
         return [_pickuptime count];
     }
@@ -746,11 +742,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
 {
-    if (selectedTextField==textFieldPickupFrom||selectedTextField==textFieldDeliveryTo) {
+    if (selectedTextField==textFieldPickupFrom) {
          selectedTextField.text=[_pickupfrom objectAtIndex:row];
          return [_pickupfrom objectAtIndex:row];
     }
-    else if (selectedTextField==textFieldPickupTime||selectedTextField==textFieldDeliveryTime)
+    else if (selectedTextField==textFieldPickupTime)
     {
         selectedTextField.text=[_pickuptime objectAtIndex:row];
 
@@ -769,18 +765,12 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     else if (aButton.tag==102) {
         [self showPicker:textFieldPickupTime];
     }
-    else if (aButton.tag==103) {
-        [self showPicker:textFieldDeliveryTo];
-    }
-    else if (aButton.tag==104) {
-        [self showPicker:textFieldDeliveryTime];
-    }
 }
 
 -(void)doneClicked:(id)sender
 {
     if ([selectedText length]==0) {
-        if (selectedTextField==textFieldPickupFrom||selectedTextField==textFieldDeliveryTo) {
+        if (selectedTextField==textFieldPickupFrom) {
             selectedText= [_pickupfrom objectAtIndex:0];
             [selectedTextField resignFirstResponder];
             [pickerView resignFirstResponder];
@@ -789,7 +779,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 
             
         }
-        else if (selectedTextField==textFieldPickupTime||selectedTextField==textFieldDeliveryTime)
+        else if (selectedTextField==textFieldPickupTime)
         {
             selectedText=  [_pickuptime objectAtIndex:0];
             [selectedTextField resignFirstResponder];
@@ -890,6 +880,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
   
             OrderSuccess *success=[self getSuccessView];
             success.orderStr = orderStr;
+            success.orderNoStr = orderNoStr;
   
             NSDateFormatter *DateFormatter=[[NSDateFormatter alloc] init];
             [DateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -900,9 +891,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             success.totalItemStr=[NSString stringWithFormat:@"%lu",(unsigned long)[saveItemsIDArray count]];
             
             success.totalDueStr=estimatedDue.text;
-            
-            success.deliveryto=textFieldDeliveryTo.text;
-            success.deliverytime=textFieldDeliveryTime.text;
+    
             success.Pickfrom=textFieldPickupFrom.text;
             success.Picktime=textFieldPickupTime.text;;
             success.customerID=customerid;
@@ -981,7 +970,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
 }
 -(Boolean)validateFields
 {
-    if ([textFieldDeliveryTo.text isEqualToString:@""]||[textFieldDeliveryTime.text isEqualToString:@""],[textFieldPickupFrom.text isEqualToString:@""],[textFieldPickupTime.text isEqualToString:@""]) {
+    if ([textFieldPickupFrom.text isEqualToString:@""],[textFieldPickupTime.text isEqualToString:@""]) {
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Warning!!!" message:@"Please select delivery details" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
         return FALSE;

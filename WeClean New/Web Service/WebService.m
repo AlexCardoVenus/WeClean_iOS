@@ -49,7 +49,6 @@
     NSError *error = nil;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     [request setValue:@"gzip" forHTTPHeaderField:@"Accept-Encoding"];
-    //[request setHTTPBody:[[NSString stringWithFormat:param] dataUsingEncoding:NSUTF8StringEncoding]];
     [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:param options:NSJSONWritingPrettyPrinted error:&error]];
     [request setHTTPMethod:@"POST"];
     NSURLResponse *response = nil;

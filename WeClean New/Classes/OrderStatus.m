@@ -349,17 +349,17 @@ typedef NS_ENUM(NSInteger, CellType) {
     deliveringLabel.backgroundColor = [UIColor clearColor];
     deliveringLabel.textColor = [UIColor blackColor];
     deliveringLabel.font = [UIFont boldSystemFontOfSize:10];
-    deliveringLabel.frame = CGRectMake(250, 65, viewWidth / 2 - 10, 20);
+    deliveringLabel.frame = CGRectMake(245, 65, viewWidth / 2 - 10, 20);
     deliveringLabel.text = @"Delivering";
     
     UIImageView* deliveredImage = [[UIImageView alloc] init];
     [deliveredImage setImage:[UIImage imageNamed:@"end.png"]];
-    deliveredImage.frame= CGRectMake(320 , 40, 23, 23);
+    deliveredImage.frame= CGRectMake(315 , 40, 23, 23);
     UILabel* deliveredLabel = [[UILabel alloc] init];
     deliveredLabel.backgroundColor = [UIColor clearColor];
     deliveredLabel.textColor = [UIColor blackColor];
     deliveredLabel.font = [UIFont boldSystemFontOfSize:10];
-    deliveredLabel.frame = CGRectMake(310, 65, viewWidth / 2 - 10, 20);
+    deliveredLabel.frame = CGRectMake(305, 65, viewWidth / 2 - 10, 20);
     deliveredLabel.text = @"Delivered";
     
     UIButton* modifyButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -568,14 +568,7 @@ typedef NS_ENUM(NSInteger, CellType) {
 {
     UINavigationController *navigationController = self.menuContainerViewController.centerViewController;
     PlaceOrder *order;
-    if ([[UIScreen mainScreen]bounds].size.height == 568||[[UIScreen mainScreen]bounds].size.height == 480)
-    {
-        order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder" bundle:nil];
-    }
-    else
-    {
-        order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder_6" bundle:nil];
-    }
+    order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder_6" bundle:nil];
     NSArray *controllers= [NSArray arrayWithObject:order];
     navigationController.viewControllers = controllers;
     [self.menuContainerViewController setMenuState:MFSideMenuStateClosed];
@@ -648,16 +641,8 @@ typedef NS_ENUM(NSInteger, CellType) {
             NSArray *orderDeatils=[dataDict objectForKey:@"orderdetails"];
             NSDictionary *orderDeatilsDict=[orderDeatils objectAtIndex:0];
             PlaceOrder *order;
-            if ([[UIScreen mainScreen]bounds].size.height == 568||[[UIScreen mainScreen]bounds].size.height == 480)
-            {
-                order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder" bundle:nil];
-            }
-            else
-            {
-                order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder_6" bundle:nil];
-            }
-            
-            
+            order = [[PlaceOrder alloc] initWithNibName:@"PlaceOrder_6" bundle:nil];
+             
             order.orderNoStr=selectedOrderID;
             order.pickUpStr=[orderDeatilsDict objectForKey:@"Time1"];
             order.totalDueStr=[orderDeatilsDict objectForKey:@"TotalDue"];

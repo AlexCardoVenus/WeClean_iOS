@@ -41,14 +41,19 @@ UIActivityIndicatorView *indicator;
     pickupDetails.text=self.pickUpStr;
     totalItem.text=self.totalItemStr;
     totalDue.text=[self.totalDueStr stringByReplacingOccurrencesOfString:@"HK$" withString:@""];
-    textFieldDeliveryTime.text=self.deliverytime;
-    textFieldDeliveryTo.text =self.deliveryto;
     labelExpectedDate.text = self.expectedDateStr;
 
     _pickupfrom = @[@"In Person",@"Hang at door",@"Building security"];
     
     //init picktime array
     _pickuptime = @[@"anytime",@"9-10pm",@"10-11pm",@"11pm-12pm",@"12pm-6am",@"6-7am",@"7-8am"];
+    if([self.deliverytime isEqualToString:@"(null)"] || self.deliverytime.length == 0)
+    {
+        self.deliveryto = _pickupfrom[0];
+        self.deliverytime = _pickuptime[0];
+    }
+    textFieldDeliveryTime.text=self.deliverytime;
+    textFieldDeliveryTo.text =self.deliveryto;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,7 +91,7 @@ UIActivityIndicatorView *indicator;
     NSMutableString *postparm;
     //promocode has some issue s
     postparm = [NSMutableString stringWithFormat:@"&deliveryto=%@&deliverytime=%@&Pickfrom=%@&Picktime=%@&CustomerID=%@&TotalDue=%@&actualDue=%@&SpecialRequest=%@&promoCode=%@&OrderID=%@&deliveryfee=%@&",self.deliveryto,self.deliverytime,self.Pickfrom,self.Picktime,self.customerID,self.totalDueStr,self.totalDueStr,self.specialRequest,self.promoCode,self.orderNoStr,@""];
-    
+    NSLog(@"%@", postparm);
     NSMutableArray *itemIDArrayColl=[[NSMutableArray alloc]init];
     for (int i=0; i<16; i++) {
         [itemIDArrayColl addObject:[NSString stringWithFormat:@"%d",i+1]];
@@ -139,7 +144,7 @@ UIActivityIndicatorView *indicator;
                                  handler:^(UIAlertAction * action)
                                  {
                                      OrderFinish* finishController = [[OrderFinish alloc] initWithNibName:@"OrderFinish" bundle:nil];
-                                     finishController.orderNoStr = [orderDeatilsDict objectForKey:@"id"];
+                                     finishController.orderNoStr = self.orderNoStr;
                                      finishController.pickUpStr = self.pickUpStr;
                                      finishController.totalItemStr = self.totalItemStr;
                                      finishController.totalDueStr = self.totalDueStr;
@@ -222,11 +227,13 @@ UIActivityIndicatorView *indicator;
     if (selectedTextField==textFieldDeliveryTo) {
         selectedText= [_pickupfrom objectAtIndex:row];
         textFieldDeliveryTo.text = selectedText;
+        self.deliveryto = selectedText;
     }
     else if (selectedTextField==textFieldDeliveryTime)
     {
         selectedText= [_pickuptime objectAtIndex:row];
         textFieldDeliveryTime.text = selectedText;
+        self.deliverytime = selectedText;
     }
     
     
